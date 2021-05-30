@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+        <!-- Plotly JS -->
+        <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+
+        <!-- Custom CSS -->
+        <link rel="stylesheet" type="text/css" href="css/base.css">
+        <link rel="stylesheet" type="text/css" href="css/ecg.css">
+
+        <title>Brody Taylor - Project Demos</title>
+    </head>
+
+    <body>
+        <!-- Navigation bar -->
+        <nav class="navbar navbar-expand-lg navbar-custom" id="header">
+            <button class="navbar-toggler navbar-dark toggler-custom" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarToggler">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="navbar-brand" href="index.html">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href=""><u>ECG Project</u></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pathfinder.html">Pathfinding</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="sorter.html">Sorting</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- Controls for app -->
+            <div class="ml-auto">
+                <select id="sample" onchange="sampleChange()">
+                    <option value="117" selected>Pat. 117</option>
+                    <option value="223">Pat. 223</option>
+                    <option value="231">Pat. 231</option>
+                </select>
+                <button class="btn arrow-custom" onclick="prevStage()" id="back-btn" disabled><div class="arrow-custom-icon">&#8249;</div></button>
+                <button class="btn arrow-custom" onclick="nextStage()" id="forward-btn"><div class="arrow-custom-icon">&#8250;</div></button>
+            </div>
+        </nav>
+
+        <!-- App -->
+        <noscript>This application requires JavaScript!</noscript>
+        <div id="app"></div>
+        <div id="main">
+            <h2 id="title"></h2>
+            <hr>
+            <div id="description"></div>
+        </div>
+
+        <!-- App JS -->
+        <script src="js/ecg/data.js"></script>
+        <script src="js/ecg/Stages.js"></script>
+        <script src="js/ecg/main.js"></script>
+
+        <!-- Bootstrap JS dependencies -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    </body>
+</html>

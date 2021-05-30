@@ -1,0 +1,12 @@
+#main {
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+#main .next-btn {
+    float: right;
+    padding: 0 5px 0 5px;
+    font-size: 18px;
+    border: 1px grey solid;
+    background-color: lightgrey;
+}

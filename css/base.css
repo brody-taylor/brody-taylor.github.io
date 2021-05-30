@@ -1,0 +1,69 @@
+body{
+    background-color: #E3E2DF;
+    min-width: 450px;
+}
+
+.navbar-custom {
+    background-color: #546E7F;
+}
+.navbar-custom a, .navbar-custom button {
+    color: #E3E2DF;
+}
+.navbar-custom a:hover, .navbar-custom button:hover {
+    color: grey;
+}
+.navbar-custom .nav-link:hover {
+    text-decoration: underline;
+}
+.navbar-custom select {
+    -ms-transform: translateY(3px);
+    transform: translateY(3px);
+    height: 30px;
+    border: 1px solid lightgrey ;
+    border-radius: 5px;
+    background-color: lightgrey;
+    text-align: center;
+}
+
+.toggler-custom {
+    border-color: lightgrey;
+}
+
+.arrow-custom {
+    height: 40px;
+    width: 60px;
+    font-size: 40px;
+}
+.arrow-custom-icon {
+    transform: translateY(-25px);
+}
+.arrow-custom:disabled {
+    color: grey;
+}
+
+#main .main-link {
+    color: black;
+}
+#main hr {
+    margin: 0;
+}
+#main p, #main div {
+    font-size: 20px;
+    text-align: justify;
+}
+
+.icon {
+    float: right;
+    margin: 8px 0 0 0;
+}
+
+#app {
+    overflow-x: hidden;
+}
+
+.footer-custom {
+    min-width: 450px;
+    background-color: #546E7F;
+    color: #E3E2DF;
+}
+

@@ -1,0 +1,19 @@
+#app table {
+    position: relative;
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+
+#app td {
+    text-align: center;
+    border: 1px solid black;
+    cursor: pointer;
+    user-select: none;
+}
+
+#app .app_button, .app_select {
+    position: absolute;
+    visibility: hidden;
+    height: 0;
+}
